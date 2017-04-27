@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/white"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.marble.marble_client.MainActivity">
+
+    <TextView
+        android:text="TextView"
+        android:id="@+id/beacon0"
+        android:layout_width="150dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="525dp"
+        android:textSize="5sp"
+        android:layout_height="5dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="525dp"
+        android:id="@+id/beacon1"
+        android:layout_height="5dp"
+        android:textSize="5sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="150dp"
+        android:layout_below="@+id/beacon1"
+        android:layout_alignStart="@+id/beacon1"
+        android:layout_marginTop="0dp"
+        android:id="@+id/beacon2"
+        android:layout_height="5dp"
+        android:textSize="5sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="150dp"
+        android:layout_below="@+id/beacon2"
+        android:layout_alignStart="@+id/beacon2"
+        android:layout_marginTop="0dp"
+        android:id="@+id/beacon3"
+        android:textSize="5sp"
+        android:layout_height="5dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="150dp"
+        android:layout_below="@+id/beacon3"
+        android:layout_alignStart="@+id/beacon3"
+        android:layout_marginTop="0dp"
+        android:id="@+id/beacon4"
+        android:textSize="5sp"
+        android:layout_height="5dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="150dp"
+        android:layout_below="@+id/beacon4"
+        android:layout_alignStart="@+id/beacon4"
+        android:layout_marginTop="0dp"
+        android:id="@+id/beacon5"
+        android:textSize="5sp"
+        android:layout_height="5dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="150dp"
+        android:layout_below="@+id/beacon5"
+        android:layout_alignStart="@+id/beacon5"
+        android:layout_marginTop="0dp"
+        android:id="@+id/beacon6"
+        android:textSize="5sp"
+        android:layout_height="5dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="150dp"
+        android:layout_below="@+id/beacon6"
+        android:layout_alignStart="@+id/beacon6"
+        android:layout_marginTop="0dp"
+        android:id="@+id/beacon7"
+        android:textSize="5sp"
+        android:layout_height="5dp"
+        android:visibility="invisible"/>
+
+    <com.example.chongshao_mikasa.ble_fingerprint_java.MySurfaceView
+        android:id="@+id/gl_layout"
+        android:orientation="horizontal"
+        android:layout_marginLeft="250dp"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:visibility="invisible"/>
+
+
+    <FrameLayout
+        android:id="@+id/mainLayout"
+        android:orientation="vertical"
+        android:layout_width="400dp"
+        android:layout_height="300dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/rotationMsg"
+        android:layout_marginLeft="480dp"
+        android:textSize="5sp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/gl_layout"
+        android:id="@+id/button"
+        />
+
+    <FrameLayout
+        android:id="@+id/mainLayout2"
+        android:orientation="vertical"
+        android:layout_marginLeft="300dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="125dp"
+        android:layout_width="400dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="xup"
+        android:layout_height="20dp"
+        android:id="@+id/button2"
+        android:layout_marginTop="189dp"
+        android:layout_width="40dp"
+        android:textSize="5sp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="xdown"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="189dp"
+        android:id="@+id/button4"
+        android:layout_marginLeft="45dp"
+        android:textSize="5sp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="yup"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:id="@+id/button5"
+        android:layout_marginTop="212dp"
+        android:layout_marginLeft="0dp"
+        android:textSize="5sp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="ydown"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:id="@+id/button6"
+        android:layout_marginTop="212dp"
+        android:layout_marginLeft="45dp"
+        android:textSize="5sp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="zup"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:id="@+id/button7"
+        android:layout_marginTop="234dp"
+        android:textSize="5sp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="zdown"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:id="@+id/button8"
+        android:layout_marginTop="234dp"
+        android:layout_marginLeft="45dp"
+        android:textSize="5sp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="r1up"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:id="@+id/button9"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="189dp"
+        android:textSize="5sp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="r2up"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:id="@+id/button10"
+        android:layout_marginTop="212dp"
+        android:layout_marginLeft="90dp"
+        android:textSize="5sp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="r3up"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:id="@+id/button11"
+        android:layout_marginTop="234dp"
+        android:layout_marginLeft="90dp"
+        android:textSize="5sp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="r1down"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:id="@+id/button12"
+        android:layout_marginTop="189dp"
+        android:layout_marginLeft="135dp"
+        android:textSize="5sp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="r2down"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:id="@+id/button13"
+        android:layout_marginTop="212dp"
+        android:layout_marginLeft="135dp"
+        android:textSize="5sp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="r3down"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:id="@+id/button14"
+        android:layout_marginTop="234dp"
+        android:layout_marginLeft="135dp"
+        android:textSize="5sp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="record"
+        android:id="@+id/record"
+        android:layout_height="30dp"
+        android:layout_width="60dp"
+        android:textSize="5sp"
+        android:layout_marginLeft="380dp"
+        android:layout_marginTop="50dp"
+        android:visibility="invisible"/>
+
+    <Spinner
+        android:layout_height="30dp"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/beacon6"
+        android:layout_toEndOf="@+id/gl_layout"
+        android:layout_marginTop="50dp"
+        android:layout_width="150dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="250dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="read"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/read"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="120dp"
+        android:textSize="5sp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="match"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/match"
+        android:textSize="5sp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="150dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="60dp"
+        android:layout_below="@+id/mainLayout"
+        android:layout_alignEnd="@+id/match"
+        android:id="@+id/beaconPosition"
+        android:textSize="5sp"
+        android:layout_height="20dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_below="@+id/button12"
+        android:layout_alignStart="@+id/beaconPosition"
+        android:id="@+id/imuAngle"
+        android:textSize="5sp"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="60dp"
+        android:layout_below="@+id/imuAngle"
+        android:layout_alignStart="@+id/imuAngle"
+        android:id="@+id/camAnglePosition"
+        android:textSize="5sp"
+        android:layout_height="20dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="imu on"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/button"
+        android:layout_toEndOf="@+id/button"
+        android:id="@+id/imuon"
+        android:textSize="5sp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="reset"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@+id/button"
+        android:id="@+id/reset"
+        android:textSize="5sp"
+        android:layout_alignBottom="@+id/record"
+        android:layout_alignTop="@+id/record"
+        android:visibility="invisible"/>
+
+    <Button
+        android:text="Start"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/speed"
+        android:layout_height="40dp"
+        android:layout_width="80dp"
+        android:layout_alignTop="@+id/spinner" />
+
+    <Button
+        android:text="freq"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/speed"
+        android:id="@+id/freq"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
